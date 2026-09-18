@@ -13,7 +13,7 @@ public class Demojdbc {
 
         String url = "jdbc:postgresql://localhost:5432/VishnuFirst"; // parse url at the using Db name
         String username = "postgres"; // Postgress username
-        String password = "Vishnumesa@2007"; // password of the postgresql
+        String password = "Your_Password"; // password of the postgresql
         String query = "SELECT \"StudentName\" FROM \"Student\"";
 
         Class.forName("org.postgresql.Driver"); // This Step is for optional
