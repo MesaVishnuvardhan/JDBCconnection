@@ -19,6 +19,8 @@ This project is created to learn and practice JDBC with Java and PostgreSQL.
 
 ## What I Built
 
+ A Simple CRUD project for Student Details like INSERT , READ , UPDATE , DELETE I've use this operations for CRUD operations 
+
 A simple Java program that connects to a PostgreSQL database
 and executes a SELECT query using JDBC.
 
