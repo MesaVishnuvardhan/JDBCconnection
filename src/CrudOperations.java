@@ -76,14 +76,14 @@ public class CrudOperations {
 
     // DELETE --- >
 
-    public static void deleteDetails(int id){
-        String sql = "DELETE FROM Student WHERE id = ?";
+    public static void deleteDetails(int StudentId){
+        String sql = "DELETE FROM \"Student\" WHERE \"StudentId\" = ?";
 
         try(Connection connection = DriverManager.getConnection(url,Username,Password)){
 
             PreparedStatement stmt = connection.prepareStatement(sql);
 
-            stmt.setInt(1,id);
+            stmt.setInt(1,StudentId);
 
             int rows = stmt.executeUpdate();
             System.out.println("Deleted" + rows);
