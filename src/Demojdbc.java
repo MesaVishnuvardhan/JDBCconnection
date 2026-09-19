@@ -13,10 +13,10 @@ public class Demojdbc {
 
         String url = "jdbc:postgresql://localhost:5432/VishnuFirst"; // parse url at the using Db name
         String username = "postgres"; // Postgress username
-        String password = "Your_Password"; // password of the postgresql
+        String password = "Vishnumesa@2007"; // password of the postgresql
         String query = "SELECT \"StudentName\" FROM \"Student\"";
 
-        Class.forName("org.postgresql.Driver"); // This Step is for optional
+        //Class.forName("org.postgresql.Driver"); // This Step is for optional
 
         // Create Connections
         Connection connection = DriverManager.getConnection(url,username,password);
@@ -26,12 +26,15 @@ public class Demojdbc {
         ResultSet rs = st.executeQuery(query); // actually its store the ResultSet
 
         while(rs.next()){
-            System.out.println("Studentfound...!");
-            System.out.println(rs.getString("StudentName"));
+            //System.out.println("Studentfound...!");
+            System.out.println("The Student Name : " + rs.getString("StudentName"));
         }
         System.out.println("Connection established....");
 
         connection.close();
+
+
+        System.out.println("Connection closed....");
 
     }
 }
